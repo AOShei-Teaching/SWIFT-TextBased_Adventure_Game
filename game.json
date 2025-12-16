@@ -1,0 +1,66 @@
+{
+  "rooms": [
+    {
+      "id": "cell",
+      "description": "You are in a cold, damp cell. The iron door to the NORTH is locked.",
+      "items": ["rusty_key", "torch"],
+      "exits": {
+        "north": "hallway"
+      },
+      "locked": true,
+      "keyId": "rusty_key",
+      "isDark": false,
+      "enemy": null
+    },
+    {
+      "id": "hallway",
+      "description": "You are in a long stone hallway.",
+      "items": [],
+      "exits": {
+        "south": "cell",
+        "east": "storage",
+        "north": "gate"
+      },
+      "locked": false,
+      "keyId": null,
+      "isDark": true,
+      "enemy": null
+    },
+    {
+      "id": "storage",
+      "description": "You are in a dusty storage room. There are cobwebs everywhere.",
+      "items": ["sword"],
+      "exits": {
+        "west": "hallway"
+      },
+      "locked": false,
+      "keyId": null,
+      "isDark": false,
+      "enemy": null
+    },
+    {
+      "id": "gate",
+      "description": "You are at the main gate! A goblin blocks the path to the NORTH.",
+      "items": [],
+      "exits": {
+        "south": "hallway",
+        "north": "freedom"
+      },
+      "locked": false,
+      "keyId": null,
+      "isDark": false,
+      "enemy": "goblin"
+    },
+    {
+      "id": "freedom",
+      "description": "Freedom! The fresh air hits your face.",
+      "items": [],
+      "exits": {},
+      "locked": false,
+      "keyId": null,
+      "isDark": false,
+      "enemy": null
+    }
+  ],
+  "startingRoomId": "cell"
+}
